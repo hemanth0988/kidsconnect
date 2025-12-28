@@ -1,5 +1,9 @@
 /* Reset */
-* { box-sizing: border-box; margin: 0; padding: 0; }
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
 html, body {
   height: 100%;
@@ -47,6 +51,53 @@ html, body {
 
 /* When landscape, hide app and show message */
 @media (orientation: landscape) {
-  #app { display: none; }
-  #landscape-msg { display: flex; }
+  #app {
+    display: none;
+  }
+  #landscape-msg {
+    display: flex;
+  }
+}
+
+/* ------------------------------
+   Login screen
+------------------------------ */
+
+.login-screen {
+  padding: 24px;
+}
+
+.login-screen h1 {
+  margin-bottom: 24px;
+}
+
+.rules-check {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 16px;
+  align-items: flex-start;
+}
+
+.rules-check input {
+  margin-top: 4px;
+}
+
+.login-screen button {
+  width: 100%;
+  height: var(--btn-height);
+  border-radius: var(--radius-md);
+  border: none;
+  background: var(--color-primary);
+  color: #fff;
+  font-size: 16px;
+}
+
+.login-screen button:disabled {
+  opacity: 0.5;
+}
+
+.hint {
+  margin-top: 8px;
+  font-size: 13px;
+  color: var(--text-muted);
 }
