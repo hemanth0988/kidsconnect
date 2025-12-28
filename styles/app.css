@@ -34,3 +34,33 @@ html, body {
     display: none;
   }
 }
+
+/* Landscape / Desktop message */
+#landscape-msg {
+  display: none;
+  position: fixed;
+  inset: 0;
+  align-items: center;
+  justify-content: center;
+}
+
+#landscape-msg .msg-card {
+  max-width: 420px;
+  margin: 16px;
+  padding: 24px;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  border-radius: var(--radius-lg);
+  text-align: center;
+  color: var(--text-primary);
+}
+
+/* When landscape, hide app and show message */
+@media (orientation: landscape) {
+  #app {
+    display: none;
+  }
+  #landscape-msg {
+    display: flex;
+  }
+}
