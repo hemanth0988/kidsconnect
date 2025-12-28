@@ -1,0 +1,32 @@
+:root {
+  /* Brand */
+  --color-primary: #6b5cff;
+  --color-secondary: #8f7cff;
+
+  /* Backgrounds */
+  --bg-app: #ffffff;
+  --bg-overlay: rgba(255, 255, 255, 0.92);
+
+  /* Text */
+  --text-primary: #111111;
+  --text-secondary: #666666;
+  --text-muted: #999999;
+
+  /* Borders & radius */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+
+  /* Spacing */
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+
+  /* Font */
+  --font-main: -apple-system, BlinkMacSystemFont, "Segoe UI",
+               Roboto, Helvetica, Arial, sans-serif;
+
+  /* Buttons */
+  --btn-height: 48px;
+}
