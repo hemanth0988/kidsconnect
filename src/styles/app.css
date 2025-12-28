@@ -1,0 +1,36 @@
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  font-family: var(--font-main);
+  background: transparent;
+}
+
+/* Background outside app */
+#bg {
+  position: fixed;
+  inset: 0;
+  background: linear-gradient(135deg, #6b5cff, #8f7cff);
+  filter: blur(20px);
+  z-index: -1;
+}
+
+/* App container */
+#app {
+  max-width: 430px;
+  margin: 0 auto;
+  min-height: 100vh;
+  background: var(--bg-app);
+}
+
+/* Disable landscape usage visually */
+@media (orientation: landscape) {
+  #app {
+    display: none;
+  }
+}
