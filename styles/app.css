@@ -49,14 +49,10 @@ html, body {
   text-align: center;
 }
 
-/* When landscape, hide app and show message */
-@media (orientation: landscape) {
-  #app {
-    display: none;
-  }
-  #landscape-msg {
-    display: flex;
-  }
+/* Show desktop message only when viewport is wider than our app */
+@media (min-width: 700px) {
+  #app { display: none; }
+  #landscape-msg { display: flex; }
 }
 
 /* ------------------------------
