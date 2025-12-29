@@ -145,3 +145,59 @@ html, body {
   color: var(--text-secondary);
   font-size: 14px;
 }
+/* Topbar */
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 16px 8px;
+}
+
+.topbar-title {
+  font-weight: 600;
+}
+
+/* Screen content wrapper */
+.content {
+  padding: 16px 24px 24px;
+}
+
+/* Overlay */
+.overlay {
+  position: fixed;
+  inset: 0;
+  display: none;
+  align-items: flex-end;
+  justify-content: center;
+  background: rgba(0,0,0,0.35);
+  padding: 16px;
+}
+
+.overlay.show {
+  display: flex;
+}
+
+.overlay-card {
+  width: 100%;
+  max-width: 430px;
+  background: rgba(255,255,255,0.92);
+  backdrop-filter: blur(12px);
+  border-radius: var(--radius-lg);
+  padding: 18px;
+}
+
+.overlay-card h2 {
+  margin-bottom: 6px;
+}
+
+.overlay-card .sub {
+  color: var(--text-secondary);
+  font-size: 14px;
+  margin-bottom: 14px;
+}
+
+.overlay-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
