@@ -49,9 +49,9 @@ export function renderLogin() {
     goTo("signup");
   });
 
-  document.getElementById("forgotBtn").addEventListener("click", () => {
-    alert("Forgot password flow next (prototype).");
-  });
+document.getElementById("forgotBtn").addEventListener("click", () => {
+  goTo("forgot");
+});
 
   btn.addEventListener("click", () => {
     alert("Login success (prototype). Next: Create Child Profile.");
