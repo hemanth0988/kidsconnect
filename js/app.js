@@ -1,6 +1,5 @@
-// App entry point
-import { renderLogin } from "./screens/login.js";
+import { goTo } from "./router.js";
 
 document.addEventListener("DOMContentLoaded", () => {
-  renderLogin();
+  goTo("login");
 });
