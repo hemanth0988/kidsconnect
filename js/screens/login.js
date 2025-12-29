@@ -1,3 +1,5 @@
+import { goTo } from "../router.js";
+
 export function renderLogin() {
   const app = document.getElementById("app");
 
@@ -38,15 +40,13 @@ export function renderLogin() {
   const btn = document.getElementById("loginBtn");
   const hint = document.getElementById("rulesHint");
 
-  // Gate login only by rules for now (prototype)
   chk.addEventListener("change", () => {
     btn.disabled = !chk.checked;
     hint.style.display = chk.checked ? "none" : "block";
   });
 
-  // Placeholder navigation (we'll wire router next)
   document.getElementById("signupBtn").addEventListener("click", () => {
-    alert("Signup screen next (prototype).");
+    goTo("signup");
   });
 
   document.getElementById("forgotBtn").addEventListener("click", () => {
@@ -54,6 +54,6 @@ export function renderLogin() {
   });
 
   btn.addEventListener("click", () => {
-    alert("Login (prototype) — next we route to Create Account / Parent Profile.");
+    alert("Login success (prototype). Next: Create Child Profile.");
   });
 }
