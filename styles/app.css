@@ -16,7 +16,7 @@ html, body {
 #bg {
   position: fixed;
   inset: 0;
-  background: linear-gradient(135deg, #6b5cff, #8f7cff);
+  background: linear-gradient(135deg, #2563eb, #3b82f6);
   filter: blur(20px);
   z-index: -1;
 }
@@ -120,7 +120,7 @@ html, body {
 }
 
 .field input:focus {
-  border-color: rgba(107,92,255,0.6);
+  border-color: rgba(37,99,235,0.6);
 }
 
 .login-links {
